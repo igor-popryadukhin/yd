@@ -12,7 +12,7 @@ import { use } from 'echarts/core';
 import { CanvasRenderer } from 'echarts/renderers';
 import { createPinia } from 'pinia';
 import { createApp } from 'vue';
-import { VueECharts } from 'vue-echarts';
+import VueECharts from 'vue-echarts';
 
 import App from './App.vue';
 import { i18n } from './i18n';
