@@ -1,0 +1,288 @@
+{
+  "menu": {
+    "dashboard": "Панель управления",
+    "campaigns": "Кампании",
+    "campaignEdit": "Редактирование кампании",
+    "groups": "Группы и объявления",
+    "keywords": "Ключевые фразы",
+    "reports": "Статистика и отчёты",
+    "apiSettings": "Настройки API",
+    "logs": "Логи и мониторинг",
+    "profile": "Профиль и тема"
+  },
+  "common": {
+    "search": "Поиск",
+    "actions": "Действия",
+    "status": "Статус",
+    "type": "Тип",
+    "budget": "Бюджет",
+    "startDate": "Дата начала",
+    "endDate": "Дата окончания",
+    "strategy": "Стратегия",
+    "dailyBudget": "Дневной бюджет",
+    "region": "Регион",
+    "adjustments": "Корректировки ставок",
+    "save": "Сохранить",
+    "cancel": "Отмена",
+    "duplicate": "Дублировать",
+    "archive": "Архивировать",
+    "downloadCsv": "Скачать CSV",
+    "email": "E-mail",
+    "frequency": "Частота",
+    "time": "Время",
+    "matchTypes": {
+      "EXACT": "Точное",
+      "PHRASE": "Фразовое",
+      "BROAD": "Широкое"
+    },
+    "statuses": {
+      "ACTIVE": "Активна",
+      "PAUSED": "Приостановлена",
+      "ARCHIVED": "Архив"
+    }
+  },
+  "dashboard": {
+    "title": "Панель управления",
+    "updated": "Последнее обновление",
+    "cards": {
+      "active": "Активные кампании",
+      "budget": "Расход бюджета",
+      "clicks": "Клики",
+      "conversions": "Конверсии"
+    },
+    "actions": {
+      "create": "Создать кампанию",
+      "sync": "Синхронизировать данные",
+      "refresh": "Обновить статистику"
+    },
+    "tooltips": {
+      "create": "Открыть мастер создания кампании",
+      "sync": "Получить свежие данные из API",
+      "refresh": "Обновить показатели графика"
+    },
+    "performanceChart": "Динамика показов и кликов",
+    "queue": {
+      "title": "Очередь запросов",
+      "pending": "Отложенные запросы",
+      "paused": "Отправка приостановлена",
+      "active": "Отправка активна"
+    }
+  },
+  "campaigns": {
+    "title": "Список кампаний",
+    "searchPlaceholder": "Поиск по названию",
+    "filters": {
+      "status": "Статус",
+      "type": "Тип кампании",
+      "strategy": "Стратегия"
+    },
+    "columns": {
+      "id": "ID",
+      "name": "Название",
+      "type": "Тип",
+      "status": "Статус",
+      "strategy": "Стратегия",
+      "budget": "Бюджет",
+      "dates": "Период",
+      "actions": "Действия"
+    },
+    "types": {
+      "TEXT_CAMPAIGN": "Текстовая",
+      "UNIFIED_CAMPAIGN": "Универсальная",
+      "SMART_CAMPAIGN": "Умная",
+      "DYNAMIC_CAMPAIGN": "Динамическая",
+      "MOBILE_APP_CAMPAIGN": "Мобильное приложение"
+    },
+    "actions": {
+      "edit": "Редактировать",
+      "pause": "Приостановить",
+      "resume": "Возобновить",
+      "delete": "Удалить"
+    },
+    "empty": "Кампании не найдены"
+  },
+  "campaignEdit": {
+    "title": "Настройки кампании",
+    "tabs": {
+      "basic": "Основные настройки",
+      "placements": "Площадки",
+      "extensions": "Расширения"
+    },
+    "fields": {
+      "name": "Название кампании",
+      "type": "Тип кампании",
+      "strategy": "Стратегия",
+      "budget": "Общий бюджет",
+      "dailyBudget": "Дневной бюджет",
+      "dates": "Даты показа",
+      "region": "Регион показа",
+      "adjustments": "Корректировки ставок",
+      "schedule": "График показов"
+    },
+    "placeholders": {
+      "name": "Например, Весна 2025",
+      "token": "Введите OAuth-токен",
+      "client": "Введите Client ID"
+    },
+    "budgetDistribution": "Распределение бюджета по группам",
+    "buttons": {
+      "save": "Сохранить",
+      "cancel": "Отмена",
+      "duplicate": "Дублировать кампанию",
+      "archive": "Архивировать"
+    },
+    "validation": {
+      "name": "Укажите название кампании",
+      "budget": "Бюджет должен быть больше нуля",
+      "dailyBudget": "Дневной бюджет должен быть положительным",
+      "dates": "Выберите период показа"
+    },
+    "info": {
+      "limits": "Ограничения по количеству кампаний доступны через метод Clients.get"
+    }
+  },
+  "groups": {
+    "title": "Группы объявлений и объявления",
+    "buttons": {
+      "addGroup": "Добавить группу",
+      "addAd": "Добавить объявление",
+      "massEdit": "Массовое изменение",
+      "duplicate": "Дублировать"
+    },
+    "filters": {
+      "active": "Активные",
+      "paused": "Приостановленные",
+      "archived": "Архивные"
+    },
+    "columns": {
+      "id": "ID",
+      "name": "Название",
+      "status": "Статус",
+      "bid": "Ставка",
+      "ctr": "CTR",
+      "url": "URL"
+    }
+  },
+  "keywords": {
+    "title": "Ключевые фразы",
+    "filters": {
+      "status": "Статус",
+      "matchType": "Тип соответствия",
+      "negative": "Отрицательные"
+    },
+    "buttons": {
+      "increase": "Повысить ставки на {value}%",
+      "pause": "Приостановить",
+      "resume": "Включить",
+      "delete": "Удалить"
+    },
+    "columns": {
+      "phrase": "Фраза",
+      "matchType": "Соответствие",
+      "bid": "Ставка",
+      "status": "Статус",
+      "impressions": "Показы",
+      "clicks": "Клики",
+      "ctr": "CTR"
+    }
+  },
+  "reports": {
+    "title": "Статистика и отчёты",
+    "period": "Период",
+    "presets": {
+      "today": "Сегодня",
+      "seven": "7 дней",
+      "thirty": "30 дней"
+    },
+    "charts": {
+      "spend": "Расходы по кампаниям",
+      "conversions": "Конверсии",
+      "devices": "Показы по устройствам"
+    },
+    "table": {
+      "campaign": "Кампания",
+      "impressions": "Показы",
+      "clicks": "Клики",
+      "spend": "Расход",
+      "cpc": "CPC",
+      "conversions": "Конверсии",
+      "roi": "ROI"
+    },
+    "exportSuccess": "Отчёт сохранён в формате CSV",
+    "scheduler": {
+      "title": "Планировщик отчётов",
+      "description": "Настройте автоматическую отправку отчётов на e-mail.",
+      "frequency": {
+        "daily": "Ежедневно",
+        "weekly": "Еженедельно"
+      },
+      "save": "Сохранить расписание",
+      "success": "Параметры планировщика обновлены"
+    }
+  },
+  "apiSettings": {
+    "title": "Настройки API",
+    "fields": {
+      "token": "OAuth-токен",
+      "clientId": "Client ID",
+      "parallel": "Параллельные потоки",
+      "delay": "Задержка между запросами (мс)",
+      "autoPause": "Порог автоостановки"
+    },
+    "limit": {
+      "title": "Использование лимита API",
+      "description": "Лимит кампаний можно получить через метод Clients.get"
+    },
+    "notifications": {
+      "limit": "Уведомлять при достижении 80% лимита",
+      "errors": "Оповещать об ошибках"
+    },
+    "queue": {
+      "title": "Очередь запросов",
+      "pending": "В очереди",
+      "resume": "Возобновить",
+      "paused": "Отправка приостановлена"
+    }
+  },
+  "logs": {
+    "title": "Логи и мониторинг",
+    "filters": {
+      "errorsOnly": "Только ошибки",
+      "method": "Метод",
+      "search": "Поиск по операции"
+    },
+    "columns": {
+      "time": "Время",
+      "method": "Метод",
+      "operation": "Операция",
+      "status": "Статус",
+      "code": "HTTP",
+      "duration": "Длительность",
+      "message": "Сообщение"
+    },
+    "buttons": {
+      "clear": "Очистить",
+      "download": "Скачать лог"
+    },
+    "empty": "События не найдены"
+  },
+  "profile": {
+    "title": "Профиль пользователя",
+    "fields": {
+      "name": "Имя",
+      "email": "E-mail",
+      "company": "Компания"
+    },
+    "theme": {
+      "title": "Тема интерфейса",
+      "light": "Светлая",
+      "dark": "Тёмная",
+      "accent": "Акцентный цвет"
+    },
+    "buttons": {
+      "save": "Сохранить изменения",
+      "logout": "Выйти из системы"
+    },
+    "success": "Профиль обновлён"
+  }
+}

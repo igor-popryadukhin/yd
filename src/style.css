@@ -1,0 +1,87 @@
+:root {
+  font-family:
+    'Inter',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    sans-serif;
+  background-color: #f4f6fb;
+  color: #1f2633;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  --app-max-width: 1280px;
+  --accent-color: #1677ff;
+}
+
+body {
+  margin: 0;
+  background: #f4f6fb;
+}
+
+[data-theme='dark'] {
+  background-color: #111827;
+  color: #f9fafb;
+}
+
+[data-theme='dark'] body {
+  background: #0f172a;
+  color: #f9fafb;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.app-shell {
+  min-height: 100vh;
+  background: transparent;
+}
+
+.app-content {
+  padding: 24px;
+  min-height: calc(100vh - 112px);
+  background: transparent;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.chart-card {
+  height: 340px;
+}
+
+.ant-layout-content {
+  background: transparent !important;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.ant-card {
+  border-radius: 16px;
+}
+
+.ant-statistic-title {
+  color: rgba(30, 41, 59, 0.72);
+}
+
+[data-theme='dark'] .ant-statistic-title {
+  color: rgba(226, 232, 240, 0.72);
+}
+
+.tag-pill {
+  border-radius: 999px;
+  padding: 2px 12px;
+  background-color: rgba(22, 119, 255, 0.1);
+}
